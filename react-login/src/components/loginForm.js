@@ -1,14 +1,22 @@
-import React from "react";
+import React,{ useState} from "react";
 
-function Loginform(){
+function Loginform( {Login, error}){
+    const [details, setDetails] = useState({name: "", email:"",password: ""});
+
+    const submitHandler = e => {
+        e.preventDefault();
+        Login(details);
+
+    }
     return (
+        <form onSubmit={submitHandler}>
         <div className="form-inner">
             <h2>LOGIN FORM</h2>
              {/* ERROR */}
              `<div className="form-group">
                 <label htmlFor="name">Name:  </label>
                 <input type="text" name="name" id
-                ="name" />
+                ="name"  onChange={e=> setDetails({...details, name: e.target.value})} value={details.name}/>
                 </div> <br />
                 <div className="form-group">
                 <label htmlFor="email">Email: </label>
@@ -22,9 +30,8 @@ function Loginform(){
                 </div> <br />
             <input type="submit" value="LOGIN" />
         
-
-
         </div>
+        </form>
     )
 }
 
