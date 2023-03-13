@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Loginform from './components/loginForm';
 function App() {
   const adminUser = {
-  email:"admina@admin.com",
+  email:"admin@admin.com",
   password:"admin123"
 }
 
@@ -12,6 +12,12 @@ const [error, setError] = useState("");
 
 const Login = details => {
   console.log(details);
+
+  if(details.email==adminUser.email && details.password == adminUser.password) {
+  console.log("Logged in");
+  }else {
+    console.log("Details do not match");
+  }
 }
 const Logout =()=> {
   console.log("Logout");
