@@ -6,20 +6,20 @@ function Loginform(){
             <h2>LOGIN FORM</h2>
              {/* ERROR */}
              `<div className="form-group">
-                <label htmlFor="name">Name:</label>
+                <label htmlFor="name">Name:  </label>
                 <input type="text" name="name" id
                 ="name" />
-                </div>
+                </div> <br />
                 <div className="form-group">
-                <label htmlFor="email">Email:</label>
-                <input type="email" name="email" id
+                <label htmlFor="email">Email: </label>
+                <input type="email  " name="email" id
                 ="email" />
-                </div>
+                </div> <br />
                 <div className="form-group">
-                <label htmlFor="password">Password:</label>
+                <label htmlFor="password">Password: </label>
                 <input type="password" name="password" id
                 ="password" />
-                </div>
+                </div> <br />
             <input type="submit" value="LOGIN" />
         
 
