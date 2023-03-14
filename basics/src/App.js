@@ -1,23 +1,16 @@
-
-import './App.css';
-import Employee from './components/Employee';
-function App(){
-  console.log('W are about to list the employees.');
-  const showEmployees = true;
+function MyButton() {
   return (
-    <div className="App">
-      {showEmployees ? (
-      <>
-       <Employee />
-       <Employee />
-       <Employee />
-       <Employee />
-       </>
-      ) : ( 
-      <p>You can not see the employees.</p>
-      )}
-    </div>
-  ); 
+    <button>
+      I'm a button.
+    </button>
+  );
 }
 
-export default App; 
+export default function MyApp() {
+  return (
+    <div>
+      <h1>Welcome to my app.</h1>
+      <MyButton />
+    </div>
+  );
+}
