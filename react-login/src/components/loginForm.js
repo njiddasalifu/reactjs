@@ -9,7 +9,7 @@ function Loginform( {Login, error}){
 
     }
     return (
-        <form onSubmit={submitHandler}>
+        <form onSubmit= {submitHandler}>
         <div className="form-inner">
             <h2>LOGIN FORM</h2>
              {/* ERROR */}
