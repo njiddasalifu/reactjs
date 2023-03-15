@@ -1,23 +1,25 @@
-
-import './App.css';
-import Employee from './components/Employee';
-function App(){
-  console.log('W are about to list the employees.');
-  const showEmployees = true;
-  return (
-    <div className="App">
-      {showEmployees ? (
-      <>
-       <Employee />
-       <Employee />
-       <Employee />
-       
-       </>
-      ) : ( 
-      <p>You can not see the employees.</p>
-      )}
-    </div>
-  ); 
+import React from "react";
+class Car extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        brand: "Ford",
+        model: "Mustang",
+        color: "red",
+        year: 2000};
+    }
+    render(){
+      return(
+      <div>
+        <h1>My Car is a {this.states.brand}</h1>
+        <p>
+          It has a {this.state.color}
+          and is a {this.state.model} model 
+          made in {this.state.year}.
+        </p>
+      </div>
+      );
+    }
 }
 
-export default App; 
+export default Car;
