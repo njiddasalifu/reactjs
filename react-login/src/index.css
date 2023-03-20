@@ -7,9 +7,9 @@
 }
 input, button {
     appearance: none;
-    background: none;
-    border: none;
-    outline: none;
+    background: white;
+    border: blue;
+    outline: auto;
 }
 
 .App {
