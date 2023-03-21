@@ -3,7 +3,7 @@ class Car extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        brand: "Ford",
+        brand: ["Ford", "benz"],
         model: "Mustang",
         color: "red",
         year: 2000};
