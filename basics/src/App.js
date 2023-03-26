@@ -7,7 +7,7 @@ function App(){
     <header className="App-header">
 
     <Employee />
-    <Employee />
+   
     <Employee />
     </header> 
     </div>
