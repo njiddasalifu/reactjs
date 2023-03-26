@@ -2,14 +2,17 @@ import './App.css';
 import Employee from './components/Employee';
 
 function App(){
+  const showEmployees = false;
   return (
     <div className="App">
-    <header className="App-header">
+      {showEmployees ? 
+    <>
+    
+    <Employee />
+    </>
 
-    <Employee />
-   
-    <Employee />
-    </header> 
+   : <p>You can not see the employees.</p>
+      }  
     </div>
   );
 
