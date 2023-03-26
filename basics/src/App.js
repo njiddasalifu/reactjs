@@ -8,7 +8,7 @@ function App(){
       {showEmployees ? // this line means if its true
     <>
     
-    <Employee name="Salifu" />
+    <Employee name="Salifu" role="IT Specialist" />
     </>
 // this line below means if its false
    : <p>You can not see the employees.</p>
