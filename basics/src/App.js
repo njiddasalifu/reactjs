@@ -17,7 +17,7 @@ function App(){
       setRole(e.target.value);
     }}
     />
-    
+  
     <Employee name="Salifu" role={role} />
     
     </>
