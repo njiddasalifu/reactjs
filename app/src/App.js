@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import hello from './components/hello';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         >
           elsalifwedesign.com
         </a>
+        <hello />
       </header>
     </div>
   );
