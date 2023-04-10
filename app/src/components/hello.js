@@ -1,8 +1,10 @@
-function hello(){
+function Hello(){
     return(
-        <h1>Hello from Salif</h1>
+        <div>
+            <h1>Hello from Salif</h1>
+        </div>
     );
 
 }
 
-export default hello;
+export default Hello;
