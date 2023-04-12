@@ -1,24 +1,13 @@
 
 import './App.css';
 import hello from './components/hello';
+import React from 'react';
+import { ReactDOM } from 'react';
+const x = 5;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          elsalifwedesign.com
-        </a>
-        <hello />
-      </header>
-    </div>
-  );
-}
+const myElement = <h1>{(x) < 10 ? "Hello" : "Goodbye"}</h1>;
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+
+
