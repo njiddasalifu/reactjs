@@ -8,7 +8,8 @@ function Hello(){
           <li>Mangoes</li>
           <li>Pears</li>
           <ol>
-            <li>Quava</li>
+            <li>Quavas</li>
+            <li>Oranges</li>
           </ol>
         </ul>
    
