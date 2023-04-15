@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 
 import Hello from './components/hello';
 import Expense from './components/expense';
-
+import Car from './components/car';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <Hello />
    <Expense />
+   <Car />
 
   </React.StrictMode>
 );
