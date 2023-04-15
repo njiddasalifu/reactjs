@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import Hello from './components/hello';
+import Expense from './components/expense';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <Hello />
+   <Expense />
 
   </React.StrictMode>
 );
