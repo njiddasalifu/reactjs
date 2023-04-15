@@ -9,7 +9,7 @@ root.render(
   <React.StrictMode>
    <Hello />
    <Expense />
-   <Car />
+   <Car color= "red" />
 
   </React.StrictMode>
 );
