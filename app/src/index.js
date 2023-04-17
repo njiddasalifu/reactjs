@@ -11,7 +11,7 @@ root.render(
    <Expense />
    <Car color= "red" name= "Benz" />
    <Car color= "red" name= "Benz" />
-   <Car color= "red" name= "Benz" />
+   
 
   </React.StrictMode>
 );
