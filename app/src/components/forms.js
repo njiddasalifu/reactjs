@@ -1,17 +1,25 @@
-import { useState } from "react";
-import { ReactDOM } from "react-dom/client";
+import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
-function MyForm(){
-    // we are using the usestate hook to manage the form input.
-    const [name, setName] = useState('');
+function MyForm() {
+  const [name, setName] = useState("");
 
-    return(
-        <form>
-            <label>Enter your name:
-                <input type="text" value={name} onChange={(e)=> setName(e.target.value)} />
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name entered is: ${name}`)
+  }
 
-            </label>
-        </form>
-    );
+  return (
+    <form onSubmit={handleSubmit}> 
+      <label>Enter your name:
+        <input 
+          type="text" 
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+      <input type="submit" />
+    </form>
+  )
 }
 export default MyForm;

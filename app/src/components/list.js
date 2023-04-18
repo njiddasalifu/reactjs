@@ -1,5 +1,5 @@
 function Car(props){
-    return <li>I am a {props.brand}</li>
+    return <li> {props.brand}</li>
 }
 
 function Garrage(){
@@ -11,7 +11,7 @@ function Garrage(){
     ];
     return(
         <>
-        <h1>Who lives in my Garrage?</h1>
+        <h2>Who lives in my Garrage?</h2>
         <ul>
             {cars.map((car)=><Car key={car.id} brand={car.brand} />)}
         </ul>
