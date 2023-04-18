@@ -6,6 +6,8 @@ import Expense from './components/expense';
 import Car from './components/car';
 import Football from './components/football';
 import Garrage from './components/list';
+import MyForm from './components/forms';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -15,6 +17,7 @@ root.render(
    <Car color= "red" name= "Benz" />
    <Football />
    <Garrage />
+   <MyForm />
 
   </React.StrictMode>
 );
