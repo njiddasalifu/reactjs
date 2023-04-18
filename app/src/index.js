@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import Hello from './components/hello';
 import Expense from './components/expense';
 import Car from './components/car';
+import Football from './components/football';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -11,6 +12,7 @@ root.render(
    <Expense />
    <Car color= "red" name= "Benz" />
    <Car color= "red" name= "Benz" />
+   <Football />
 
   </React.StrictMode>
 );
