@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ReactDOM } from "react-dom/client";
 
 function MyForm(){
+    // we are using the usestate hook to manage the form input.
     const [name, setName] = useState('');
 
     return(
