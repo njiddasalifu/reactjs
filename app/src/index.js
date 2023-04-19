@@ -13,8 +13,6 @@ root.render(
   <React.StrictMode>
    <Hello />
    <Expense />
-   <Car color= "red" name= "Benz" />
-   <Car color= "red" name= "Benz" />
    <Football />
    <Garrage />
    <MyForm />
