@@ -11,14 +11,15 @@ function MyForm() {
 
   return (
     <form onSubmit={handleSubmit}> 
-      <label>Enter your name:
+      <label>Name: <br />
         <input 
           type="text" 
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-      </label>
-      <input type="submit" />
+      </label> <br />
+      <button>Submit</button>
+      {/*<input type="submit" label='Submit'/> */}
     </form>
   )
 }
