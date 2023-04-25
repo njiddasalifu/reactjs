@@ -6,13 +6,16 @@ import Expense from './components/expense';
 import Car from './components/car';
 import Garrage from './components/list';
 import MyForm from './components/forms';
-import LoginForm from './components/loginForm'
+import LoginForm from './components/loginForm';
+import Login from './components/login';
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <Hello />
    <LoginForm />
-   
+   <Login />
   </React.StrictMode>
 );
 
