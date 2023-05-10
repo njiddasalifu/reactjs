@@ -1,54 +1,48 @@
-
-import './App.css';
-
-//prodect category function
-function ProductCategoryRow({ category}){
-  return(
+function ProductCategoryRow({ category }) {
+  return (
     <tr>
       <th colSpan="2">
-          {category}
+        {category}
       </th>
     </tr>
   );
 }
 
-//product row funtion
-function ProductRow({ product }){
-  const name= product.stocked ? product.name:
-  <span style={{color: 'red'}}>
-    {product.name}
-  </span>;
-  return(
+function ProductRow({ product }) {
+  const name = product.stocked ? product.name :
+    <span style={{ color: 'red' }}>
+      {product.name}
+    </span>;
+
+  return (
     <tr>
-      This is the category
       <td>{name}</td>
       <td>{product.price}</td>
     </tr>
   );
 }
 
-//product table
-
-function ProductTable({ products }){
+function ProductTable({ products }) {
   const rows = [];
   let lastCategory = null;
 
-  products.forEacch((product) => {
-    if(product.category !== lastCategory){
+  products.forEach((product) => {
+    if (product.category !== lastCategory) {
       rows.push(
-        <ProductCategoryRow 
-        category={product.category}
-        key={product.category} />
+        <ProductCategoryRow
+          category={product.category}
+          key={product.category} />
       );
     }
     rows.push(
-      <ProductRow 
-      product={product}
-      key={product.name} />
+      <ProductRow
+        product={product}
+        key={product.name} />
     );
     lastCategory = product.category;
   });
-  return(
+
+  return (
     <table>
       <thead>
         <tr>
@@ -56,26 +50,25 @@ function ProductTable({ products }){
           <th>Price</th>
         </tr>
       </thead>
-    <tbody>{rows}</tbody>
+      <tbody>{rows}</tbody>
     </table>
   );
 }
-
-//function search bar
-function SearchBar(){
-  return(
+// searching for products
+function SearchBar() {
+  return (
     <form>
-      <input type='text' placeholder='Search..' />
+      <input type="text" placeholder="Search..." />
       <label>
-        <input type='"checkbox' />
+        <input type="checkbox" />
         {' '}
-        Onlys show products in stock
+        Only show products in stock
       </label>
     </form>
   );
 }
 
-//filtering table
+//filter products function
 function FilterableProductTable({ products }) {
   return (
     <div>
@@ -84,8 +77,7 @@ function FilterableProductTable({ products }) {
     </div>
   );
 }
-
-//products
+ //products function
 const PRODUCTS = [
   {category: "Fruits", price: "$1", stocked: true, name: "Apple"},
   {category: "Fruits", price: "$1", stocked: true, name: "Dragonfruit"},
@@ -97,13 +89,6 @@ const PRODUCTS = [
 
 
 function App() {
-  return (
-    <>
-    Hello
-    
-    </>
-    
-  );
+  return <FilterableProductTable products={PRODUCTS} />;
 }
-
 export default App;
