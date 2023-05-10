@@ -1,19 +1,10 @@
 import React from "react";
-import {
-    Nav, NavLink, Bars, NavMenu, Navbtn, NavbtnLink,
-} from './NavbarElements';
-
-const Navbar = ()=>{
+function Navbar(){
     return(
         <>
-        
-        <NavMenu>
-            <NavLink to='/dashboard' activeStyle>Dashboard</NavLink>
-            <NavLink to='/about' activeStyle>About</NavLink>
-            <NavLink to='/projects' activeStyle>Projects</NavLink>
-
-
-        </NavMenu>
+        <Routes>
+            <Route path="/" element= {<Home />} />
+        </Routes>
         </>
     )
 }
