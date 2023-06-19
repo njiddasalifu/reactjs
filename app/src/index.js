@@ -12,6 +12,7 @@ root.render(
   <React.StrictMode>
    <Hello />
    <LoginForm />
+   <Car />
    
   </React.StrictMode>
 );
