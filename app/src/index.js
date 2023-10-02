@@ -7,12 +7,14 @@ import Car from './components/car';
 import Garrage from './components/list';
 import MyForm from './components/forms';
 import LoginForm from './components/loginForm';
+import VedioList from './components/video';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <Hello />
-   <LoginForm />
-   <Car />
+   <VedioList />
+   {/* <LoginForm />
+   <Car /> */}
    
   </React.StrictMode>
 );
