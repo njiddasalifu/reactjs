@@ -8,6 +8,8 @@ In this repo project, I have a small documentation and the mini projects I am bu
 my react concepts.
 # Running the sample codes
 This repo can be forked and cloned. 
-Navigate to the desired the sub-dir or the section of interest and :
+Navigate to the desired the sub-dir or the section of interest and:
+
 run #`npm install` this will install the dependencies.
+
 run #`npm start` to start the server on local host.
